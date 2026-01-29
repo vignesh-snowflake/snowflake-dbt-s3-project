@@ -12,12 +12,16 @@ and transforms it into analytics-ready tables using dbt.
 
 ## 🏗️ Architecture
 AWS S3 (CSV with JSON)
+
 ↓
 Snowflake External Stage
+
 ↓
 RAW Table (VARIANT)
+
 ↓
 dbt Ephemeral Model (JSON Flattening)
+
 ↓
 dbt Incremental Model (MERGE)
 
@@ -44,14 +48,20 @@ dbt Incremental Model (MERGE)
 
 ## 📂 Project Structure
 snowflake-dbt-s3-project/
+
 ├── snowflake/
+
 │ ├── warehouse_setup.sql
 │ └── storage_integration.sql
 ├── dbt_project/
+
 │ └── models/
+
 │ ├── staging/
+
 │ │ └── query1.sql
 │ ├── marts/
+
 │ │ └── query2.sql
 │ ├── schema.yml
 │ └── sources.yml

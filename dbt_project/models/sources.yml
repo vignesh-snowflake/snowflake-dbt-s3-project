@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: RAW
+    tables:
+      - name: raw_csv_json
+        description: "Raw JSON data loaded from S3"

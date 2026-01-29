@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: query2
+    description: "Incremental orders model"
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+      - name: day
+        tests:
+          - not_null

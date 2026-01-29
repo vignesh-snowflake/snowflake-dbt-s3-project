@@ -16,6 +16,7 @@ CREATE OR REPLACE STORAGE INTEGRATION s3_int
 
 CREATE OR REPLACE FILE FORMAT csv_json_ff
   TYPE = 'CSV'
+  field_delimiter=','
   SKIP_HEADER = 1;
 
 
